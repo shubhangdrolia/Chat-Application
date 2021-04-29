@@ -1,6 +1,6 @@
 FROM node:latest
 
-WORKDIR /var/lib/jenkins/workspace/Chat-Application/server
+WORKDIR /var/lib/jenkins/workspace/Chat-Application
 
 
 COPY ./package.json ./
