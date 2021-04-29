@@ -1,6 +1,7 @@
 FROM node:latest
 
-WORKDIR /usr/scr/app
+WORKDIR /var/lib/jenkins/workspace/Chat-Application/server
+
 
 COPY ./package.json ./
 COPY ./package-lock.json ./
