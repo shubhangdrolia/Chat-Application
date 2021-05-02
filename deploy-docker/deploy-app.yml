@@ -1,3 +1,4 @@
+
 ---
 - name: Pull and Run docker image
   hosts: all
@@ -6,7 +7,7 @@
       copy:
         src: ./docker-compose.yml
         dest: ./
-   # - name: pull images specifed in docker-compose
-   #  command: docker-compose -f ./docker-compose.yml pull
-   # - name: run the pulled docker images in detached mode
-   #   command: docker-compose -f ./docker-compose.yml up -d
+    - name: pull images specifed in docker-compose
+      command: docker-compose -f ./docker-compose.yml pull
+    - name: run the pulled docker images in detached mode
+      command: docker-compose -f ./docker-compose.yml up -d
